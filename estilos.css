@@ -2,22 +2,22 @@
 
 /* font-family: 'Almarai', sans-serif; */
 
-*{
-    font-family: 'Almarai' ;
+* {
+    font-family: 'Almarai';
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     display: inline-block;
     padding: 20px;
-  
+
 }
 
-.navbar{
+.navbar {
     background-color: #C8D96F;
 }
 
-.navbar a{
+.navbar a {
     color: white;
 }
 
@@ -27,9 +27,10 @@ a {
     padding: 20px;
 }
 
-a:hover{
+a:hover {
     background-color: #A5B452;
 }
+
 li a {
     text-decoration: none;
     color: white;
@@ -37,15 +38,16 @@ li a {
 
 }
 
-li a:hover{
+li a:hover {
     background-color: #A5B452;
 }
 
-.container{
+.container {
     margin-top: 100px;
 }
-h1{
-     margin-left: 20px;
+
+h1 {
+    margin-left: 20px;
     font-weight: 100;
     font-size: 80px;
     font-family: 'Almarai';
@@ -53,7 +55,7 @@ h1{
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     margin-left: 50px;
     font-size: 80px;
     font-weight: 100;
@@ -63,7 +65,7 @@ h2{
 }
 
 
-h3{
+h3 {
     margin-left: 190px;
     font-family: 'Almarai';
     font-size: 30px;
@@ -71,17 +73,18 @@ h3{
     color: white;
 }
 
-h4{
+h4 {
     color: white;
     font-size: 50px;
     font-weight: 600;
-   margin-left: 60px;
-   /* padding-top: 30px; */
-   padding-bottom: 200px;
-   letter-spacing: 30px;
+    padding-left: 20px;
+    /* margin-left: 60px; */
+    /* padding-top: 30px; */
+    padding-bottom: 200px;
+    letter-spacing: 30px;
 }
 
-.diferente{
+.diferente {
     color: black;
 }
 
@@ -89,24 +92,26 @@ h4{
 
 /* sobre mi */
 /*contenedor de nombre y foto "sobre mí"*/
-.Nombre{
- display: flex;
- margin-left: 200px;
- padding-top: 100px;
- letter-spacing: 10px;
+.Nombre {
+    display: flex;
+    /* margin-left: 200px; */
+    padding-top: 100px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
-.foto{
-    width:200px;
-    height:200px;
+.foto {
+    width: 200px;
+    height: 200px;
     margin-left: 50px;
     margin-top: 80px;
     border-radius: 80%;
     display: inline;
 }
+
 /* contenedor de nombre y foto "sobre mí"*/
 
-.presentacion p{
+.presentacion p {
     height: 100px;
     width: 400px;
     margin-top: 30px;
@@ -114,18 +119,20 @@ h4{
     margin-bottom: 200px;
     color: white;
 }
+
 /* finaliza sobre mi */
 
 
-.imagenes{
+.imagenes {
     display: inline-block;
 }
 
 
 /* body general */
-body{
+body {
     background-color: #C8D96F;
 }
+
 /* body general */
 
 
@@ -140,42 +147,45 @@ body{
 
 }
 
-.fondoProyectos1{
-    background: linear-gradient(0deg, rgba(200,217,111,1) 0%, rgba(246,187,109,1) 0%, rgba(43,95,110,1) 100%);
+.fondoProyectos1 {
+    background: linear-gradient(0deg, rgba(200, 217, 111, 1) 0%, rgba(246, 187, 109, 1) 0%, rgba(43, 95, 110, 1) 100%);
     height: 1000px;
 }
 
-.fondoTrabajo{
+.fondoTrabajo {
     background-color: #F1A43E;
     height: 800px;
 }
-.fondoTrabajo1{
-    background: linear-gradient(0deg, rgba(241,164,62,1) 0%, rgba(200,217,111,1) 0%, rgba(241,164,62,1) 100%);
-    height: 4000px;
+
+.fondoTrabajo1 {
+    background: linear-gradient(0deg, rgba(241, 164, 62, 1) 0%, rgba(200, 217, 111, 1) 0%, rgba(241, 164, 62, 1) 100%);
+    height: 2000px;
 }
 
-.fondoTrabajo1 p{
+.fondoTrabajo1 p {
     font-size: 20px;
     margin-left: 0px;
 }
+
 /* terminan bodys distinto color */
 
-section{
+section {
     height: 800px;
     padding-top: 30px;
 }
-section p{
+
+section p {
     color: white;
     margin-left: 600px;
     font-size: 30px;
     justify-content: center;
 }
 
-form{
+form {
     margin-left: 25px;
 }
 
-iframe{
+iframe {
     text-align: center;
 }
 
@@ -197,35 +207,75 @@ iframe{
     
 } */
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
     grid-gap: 100px;
 }
 
-.item{
+.item {
     border: 1px solid black;
     padding: 20px;
 }
 
-.textoRotado{
-    transform: rotate(90deg);
-    color: white;
-    font-size: 40px;
-    font-weight: 100;
-}
 
-/* navbars para cada color de fondo */
-.navbar{
+/* navbars para cada color de fondo y tamaño del logo*/
+.navbar-brand{
+    font-size: 40px;
+}
+.navbar {
     background-color: #C8D96F;
 }
 
-#navbarProyectos{
+#navbarSobremi{
+    background-color: #A5B452;
+}
+#navbarProyectos {
     background-color: #2B5F6E;
 }
 
-#navbarTrabajo{
+#navbarTrabajo {
     background-color: #F1A43E;
 }
+
 /* fin navbars */
+
+label{
+    font-family: 'Almarai';
+    font-weight: 500;
+    color: white;
+    /* text-shadow: 1px 1px 2px black; */
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+/* media queries */
+@media only screen and (min-width: 1200px){
+    h1{
+        margin-left: 650px;
+
+    }
+    h2{
+        margin-left: 750px;
+    }
+    h3{
+        margin-left: 900px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    h4{
+        font-size: 40px;
+        
+    }
+
+    form{
+        margin-left: 0px;
+        margin-bottom: 60px;
+    }
+}
+/* fin media queries */
