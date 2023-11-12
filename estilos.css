@@ -93,7 +93,7 @@ h4 {
 
 /* sobre mi */
 /*contenedor de nombre y foto "sobre mí"*/
-.nleft{
+.nleft {
     background-image: url(./img/foto.jpg);
     height: 200px;
     width: 200px;
@@ -102,19 +102,15 @@ h4 {
     background-size: cover;
     margin-left: 120px;
     margin-bottom: 20px;
-    
+
 }
 
-.nright{
+.nright {
     margin-left: 80px;
 }
 
 /* contenedor de nombre y foto "sobre mí"*/
 .presentacion p {
-    height: 100px;
-    width: 400px;
-    margin-top: 30px;
-    margin-left: 450px;   
     margin-bottom: 200px;
     color: white;
 }
@@ -158,7 +154,7 @@ body {
 
 .fondoTrabajo1 {
     background: linear-gradient(0deg, rgba(241, 164, 62, 1) 0%, rgba(200, 217, 111, 1) 0%, rgba(241, 164, 62, 1) 100%);
-    height: 3000px;
+    height: 3200px;
 }
 
 .fondoTrabajo1 p {
@@ -169,6 +165,7 @@ body {
 .fondoContacto {
     background-color: #CBAC48;
 }
+
 /* terminan bodys distinto color */
 
 section {
@@ -187,7 +184,7 @@ form {
     margin-left: 25px;
 }
 
-.video{
+.video {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -196,7 +193,7 @@ form {
 
 .video iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -217,16 +214,18 @@ form {
 
 
 /* navbars para cada color de fondo y tamaño del logo*/
-.navbar-brand{
+.navbar-brand {
     font-size: 40px;
 }
+
 .navbar {
     background-color: #C8D96F;
 }
 
-#navbarSobremi{
+#navbarSobremi {
     background-color: #A5B452;
 }
+
 #navbarProyectos {
     background-color: #2B5F6E;
 }
@@ -238,111 +237,145 @@ form {
 #navbarContacto {
     background-color: #CBAC48;
 }
+
 /* fin navbars */
 
-label{
+label {
     font-family: 'Almarai';
     font-weight: 500;
     color: white;
     /* text-shadow: 1px 1px 2px black; */
 }
 
-input{
+input {
     margin-bottom: 10px;
 }
 
-.porcentajes{
+.porcentajes {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.porcentajes .foto{
+.porcentajes .foto {
     width: 150px;
     height: auto;
 }
 
 
-.trabajo{
-    height: 50px;
-    width: 600px;
-}
-.trabajo p{
-    font-size: 30px;
-    background-color: #a1681c;
-    border-radius: 20px;
-} 
 
-.Luna_poster{
+
+.trabajo p {
+    font-size: 20px;
+    background-color: #a1681c;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 1px #E58910;
+}
+
+.proyectos p {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 1px #87801E;
+    
+}
+.Luna_poster {
     height: 400px;
     width: auto;
-    margin-left: 40px;
-    margin-top: 500px;
-} 
+}
 
-
+.grandmas_poster {
+    height: 450px;
+    width: auto;
+}
+.pelis p {
+    /* background-color: #985B0B; */
+    border-radius: 20px;
+    border: solid 1px #E58910;
+    padding: 20px;
+    margin-top: 10px;
+    color: #724408;
+}
 
 /* media queries */
-@media only screen and (min-width: 1200px){
-    h1{
+@media only screen and (min-width: 1200px) {
+    h1 {
         margin-left: 650px;
 
     }
-    h2{
+
+    h2 {
         margin-left: 750px;
     }
-    h3{
+
+    h3 {
         margin-left: 900px;
         font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 320px){
-    h4{
+@media only screen and (max-width: 320px) {
+    h4 {
         font-size: 40px;
-        
+
     }
 
-    form{
+    form {
         margin-left: 0px;
         margin-bottom: 60px;
     }
 }
 
 /* media queries sobre mi */
-@media only screen and (max-width: 320px){
-    section p{
+@media only screen and (max-width: 320px) {
+    section p {
         margin-left: 0px;
         font-size: 20px;
         text-align: center;
     }
+}
+
+@media only screen and (max-width: 320px) {
+    .nleft {
+        height: 150px;
+        width: 150px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nright h4 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nright {
+        margin-left: 0px;
+        height: 200px;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .presentacion p {
+        margin-left: 60px;
+        height: 230px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
     }
 
-    @media only screen and (max-width: 320px){
-        .nleft{
-            height: 150px;
-            width: 150px;
-            margin-left: 80px;
-        }
+    .presentacion {
+        border: solid 2px #C8D96F;
+        margin: 5px;
+        margin-bottom: 40px;
     }
+}
 
-    @media only screen and (max-width: 320px){
-        .nright h4{
-            font-size: 13px;     
-        }
-    }
-
-    @media only screen and (max-width: 320px){
-        .nright{
-            margin-left: 0px;
-            height: 200px;
-            padding-top: 40px;
-        }
-    }
-
-    @media only screen and (max-width: 320px){
+/* @media only screen and (max-width: 1200px){
         .presentacion p{
-            margin-left: 60px;
+            margin-left: 100px;
             height: 230px;
             width: 200px;
             text-align: center;
@@ -353,6 +386,6 @@ input{
             border: solid 2px #C8D96F;
             margin: 5px;
             margin-bottom: 40px;
-        }
-    }
+        }    
+    } */
 /* fin media queries */
