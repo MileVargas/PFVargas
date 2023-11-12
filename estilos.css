@@ -85,10 +85,34 @@ h4 {
     text-transform: uppercase;
 }
 
+h5 {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline 1px;
+}
+
+h6 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+span h6{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+/* titulo de "mi trabajo" */
 .diferente {
     color: black;
 }
-
+/* fin titulo de "mi trabajo" */
 
 
 /* sobre mi */
@@ -102,19 +126,47 @@ h4 {
     background-size: cover;
     margin-left: 120px;
     margin-bottom: 20px;
-
 }
 
 .nright {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 /* contenedor de nombre y foto "sobre mí"*/
 .presentacion p {
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     color: white;
+    max-width: 100%;
 }
 
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.porcentajes {
+    padding: 40px;
+}
+.porcentajes .foto {
+    width: 150px;
+    height: auto;
+} 
+
+.porcentajes p{
+    color: white;
+}
 /* finaliza sobre mi */
 
 
@@ -142,11 +194,6 @@ body {
 
 }
 
-.fondoProyectos1 {
-    background: linear-gradient(0deg, rgba(200, 217, 111, 1) 0%, rgba(246, 187, 109, 1) 0%, rgba(43, 95, 110, 1) 100%);
-    height: 1000px;
-}
-
 .fondoTrabajo {
     background-color: #F1A43E;
     height: 800px;
@@ -154,7 +201,7 @@ body {
 
 .fondoTrabajo1 {
     background: linear-gradient(0deg, rgba(241, 164, 62, 1) 0%, rgba(200, 217, 111, 1) 0%, rgba(241, 164, 62, 1) 100%);
-    height: 3200px;
+    height: 3100px;
 }
 
 .fondoTrabajo1 p {
@@ -168,6 +215,7 @@ body {
 
 /* terminan bodys distinto color */
 
+/* estilo para el sec de fondo con gradient */
 section {
     height: 800px;
     padding-top: 30px;
@@ -179,39 +227,70 @@ section p {
     font-size: 30px;
     justify-content: center;
 }
+/* fin estilo para el sec de fondo con gradient */
 
+/* formulario contacto */
 form {
     margin-left: 25px;
 }
 
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+label {
+    font-family: 'Almarai';
+    font-weight: 500;
+    color: white;
+    /* text-shadow: 1px 1px 2px black; */
+}
+
+input {
+    margin-bottom: 10px;
+}
+/* fin formulario contacto */
+
+
+/* proyectos */
+.sinopsis p {
+    font-size: 15px;
+    color: white;
+
+}
+
+.sonido p {
+    font-size: 15px;
+    color: white;
+}
+
+.cabeza_de_novia p {
+    font-size: 15px;
+    color: white;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Tres columnas por fila */
     overflow: hidden;
+
 }
 
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.gallery-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    grid-gap: 200px;
-    margin-left: 100px;
-}
+.gallery-item:hover img {
+    transform: scale(1.1);
+} 
 
-.item {
-    border: 1px solid black;
-    padding: 20px;
-}
-
+/* fin proyectos */
 
 /* navbars para cada color de fondo y tamaño del logo*/
 .navbar-brand {
@@ -240,31 +319,8 @@ form {
 
 /* fin navbars */
 
-label {
-    font-family: 'Almarai';
-    font-weight: 500;
-    color: white;
-    /* text-shadow: 1px 1px 2px black; */
-}
 
-input {
-    margin-bottom: 10px;
-}
-
-.porcentajes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.porcentajes .foto {
-    width: 150px;
-    height: auto;
-}
-
-
-
-
+/* mi trabajo */
 .trabajo p {
     font-size: 20px;
     background-color: #a1681c;
@@ -277,8 +333,9 @@ input {
     font-size: 40px;
     text-transform: uppercase;
     text-shadow: 1px 3px 1px #87801E;
-    
+
 }
+
 .Luna_poster {
     height: 400px;
     width: auto;
@@ -288,6 +345,7 @@ input {
     height: 450px;
     width: auto;
 }
+
 .pelis p {
     /* background-color: #985B0B; */
     border-radius: 20px;
@@ -297,7 +355,32 @@ input {
     color: #724408;
 }
 
-/* media queries */
+
+.poster {
+    height: 450px;
+    width: auto;
+    border: solid white 1px;
+}
+/* fin mi trabajo */
+
+
+/* inicia media queries */
+/* media queries galeria proyectos */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 0 0 calc(50% - 20px);
+        /* Dos columnas por fila */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%;
+        padding-right: 20px;
+    }
+}
+
+/* fin media queries galeria proyectos */
 @media only screen and (min-width: 1200px) {
     h1 {
         margin-left: 650px;
@@ -345,7 +428,8 @@ input {
 
 @media only screen and (max-width: 320px) {
     .nright h4 {
-        font-size: 13px;
+        font-size: 13px; 
+        word-break: none;
     }
 }
 
@@ -354,38 +438,26 @@ input {
         margin-left: 0px;
         height: 200px;
         padding-top: 40px;
+        
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
     .presentacion p {
-        margin-left: 60px;
         height: 230px;
-        width: 200px;
-        text-align: center;
+        width: 300px;
+        text-align: justify;
         align-items: center;
     }
+    .presentacion span p{
+        margin-bottom: 250px;
+    }
 
-    .presentacion {
-        border: solid 2px #C8D96F;
-        margin: 5px;
-        margin-bottom: 40px;
+    .porcentajes .foto{
+        height: 50px;
+        width: auto;
     }
 }
 
-/* @media only screen and (max-width: 1200px){
-        .presentacion p{
-            margin-left: 100px;
-            height: 230px;
-            width: 200px;
-            text-align: center;
-            align-items: center;
-        }
 
-        .presentacion{
-            border: solid 2px #C8D96F;
-            margin: 5px;
-            margin-bottom: 40px;
-        }    
-    } */
 /* fin media queries */
