@@ -1,461 +1,378 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap");
 /* font-family: 'Almarai', sans-serif; */
-
 * {
-    font-family: 'Almarai';
-}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-
+  font-family: "Almarai";
 }
 
 .navbar {
-    background-color: #C8D96F;
+  background-color: #C8D96F;
 }
-
+.navbar .navbar-brand {
+  font-size: 40px;
+}
 .navbar a {
-    color: white;
+  padding: 20px;
 }
-
-a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
 }
-
-a:hover {
-    background-color: #A5B452;
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
 }
-
-li a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-
-}
-
-li a:hover {
-    background-color: #A5B452;
+.navbar ul li a:hover {
+  background-color: #A5B452;
 }
 
 .container {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 h1 {
-    margin-left: 20px;
-    font-weight: 100;
-    font-size: 80px;
-    font-family: 'Almarai';
-    color: white;
-    text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: 100;
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
 }
 
 h2 {
-    margin-left: 50px;
-    font-size: 80px;
-    font-weight: 100;
-    font-family: 'Almarai';
-    color: white;
-    text-transform: uppercase;
+  margin-left: 50px;
+  font-size: 80px;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
 }
 
-
 h3 {
-    margin-left: 190px;
-    font-family: 'Almarai';
-    font-size: 30px;
-    font-weight: 200;
-    color: white;
+  margin-left: 190px;
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
 }
 
 h4 {
-    color: white;
-    font-size: 50px;
-    font-weight: 600;
-    padding-left: 20px;
-    /* margin-left: 60px; */
-    /* padding-top: 30px; */
-    padding-bottom: 200px;
-    letter-spacing: 30px;
-    text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 200px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 h5 {
-    color: white;
-    font-size: 20px;
-    text-decoration: underline 1px;
+  color: white;
+  font-size: 20px;
+  text-decoration: underline 1px;
 }
 
 h6 {
-    color: white;
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    margin: 0;
-    max-width: 100%;
-    word-wrap: break-word;
-}
-
-span h6{
-    font-size: 20px;
-    text-align: center;
-    padding: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin: 0;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* titulo de "mi trabajo" */
 .diferente {
-    color: black;
+  color: black;
 }
+
 /* fin titulo de "mi trabajo" */
-
-
 /* sobre mi */
 /*contenedor de nombre y foto "sobre mí"*/
 .nleft {
-    background-image: url(./img/foto.jpg);
-    height: 200px;
-    width: 200px;
-    border-radius: 80%;
-    background-position: center;
-    background-size: cover;
-    margin-left: 120px;
-    margin-bottom: 20px;
+  background-image: url(./img/foto.jpg);
+  height: 200px;
+  width: 200px;
+  border-radius: 80%;
+  background-position: center;
+  background-size: cover;
+  margin-left: 120px;
+  margin-bottom: 20px;
 }
 
 .nright {
-    /* margin-left: 80px; */
-    max-width: 100%;
-    word-wrap: break-word;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* contenedor de nombre y foto "sobre mí"*/
 .presentacion p {
-    margin-bottom: 20px;
-    color: white;
-    max-width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  max-width: 100%;
 }
 
 .video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .porcentajes {
-    padding: 40px;
+  padding: 40px;
+}
+.porcentajes span h6 {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
 }
 .porcentajes .foto {
-    width: 150px;
-    height: auto;
-} 
-
-.porcentajes p{
-    color: white;
+  width: 150px;
+  height: auto;
 }
+.porcentajes p {
+  color: white;
+}
+
 /* finaliza sobre mi */
-
-
-.imagenes {
-    display: inline-block;
-}
-
-
 /* body general */
 body {
-    background-color: #C8D96F;
+  background-color: #C8D96F;
 }
 
 /* body general */
-
-
 /* empiezan los body de distinto color */
 .fondoSobreMi {
-    background-color: #A5B452;
+  background-color: #A5B452;
 }
 
-
 .fondoProyectos {
-    background-color: #2B5F6E;
-
+  background-color: #2B5F6E;
 }
 
 .fondoTrabajo {
-    background-color: #F1A43E;
-    height: 800px;
+  background-color: #F1A43E;
+  height: 800px;
 }
 
 .fondoTrabajo1 {
-    background: linear-gradient(0deg, rgba(241, 164, 62, 1) 0%, rgba(200, 217, 111, 1) 0%, rgba(241, 164, 62, 1) 100%);
-    height: 3100px;
+  background: linear-gradient(0deg, rgb(241, 164, 62) 0%, rgb(200, 217, 111) 0%, rgb(241, 164, 62) 100%);
+  height: auto;
 }
-
 .fondoTrabajo1 p {
-    font-size: 20px;
-    margin-left: 0px;
+  font-size: 15px;
+  margin-left: 0px;
 }
 
 .fondoContacto {
-    background-color: #CBAC48;
+  background-color: #CBAC48;
 }
 
 /* terminan bodys distinto color */
-
 /* estilo para el sec de fondo con gradient */
 section {
-    height: 800px;
-    padding-top: 30px;
+  height: 800px;
+  padding-top: 30px;
 }
 
 section p {
-    color: white;
-    margin-left: 600px;
-    font-size: 30px;
-    justify-content: center;
+  color: white;
+  margin-left: 600px;
+  font-size: 30px;
+  justify-content: center;
 }
+
 /* fin estilo para el sec de fondo con gradient */
-
 /* formulario contacto */
-
 label {
-    font-family: 'Almarai';
-    font-weight: 500;
-    color: white;
-    /* text-shadow: 1px 1px 2px black; */
+  font-weight: 500;
+  color: white;
 }
 
 input {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 /* fin formulario contacto */
-
-
 /* proyectos */
 .sinopsis p {
-    font-size: 15px;
-    color: white;
-
-}
-
-.sonido p {
-    font-size: 15px;
-    color: white;
-}
-
-.cabeza_de_novia p {
-    font-size: 15px;
-    color: white;
+  font-size: 15px;
+  color: white;
 }
 
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
-
-.gallery-item {
-    flex: 0 0 calc(33.33% - 20px);
-    /* Tres columnas por fila */
-    overflow: hidden;
-
+.galeria .gallery-item {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Tres columnas por fila */
+  overflow: hidden;
 }
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+.galeria .gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
-} 
+  transform: scale(1.1);
+}
 
 /* fin proyectos */
-
-/* navbars para cada color de fondo y tamaño del logo*/
-.navbar-brand {
-    font-size: 40px;
-}
-
-.navbar {
-    background-color: #C8D96F;
-}
-
+/* navbars para cada color de fondo*/
 #navbarSobremi {
-    background-color: #A5B452;
+  background-color: #A5B452;
 }
 
 #navbarProyectos {
-    background-color: #2B5F6E;
+  background-color: #2B5F6E;
 }
 
 #navbarTrabajo {
-    background-color: #F1A43E;
+  background-color: #F1A43E;
 }
 
 #navbarContacto {
-    background-color: #CBAC48;
+  background-color: #CBAC48;
 }
 
 /* fin navbars */
-
-
 /* mi trabajo */
 .trabajo p {
-    font-size: 20px;
-    background-color: #a1681c;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid 1px #E58910;
+  font-size: 20px;
+  background-color: #a1681c;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 1px #E58910;
 }
 
 .proyectos p {
-    font-size: 40px;
-    text-transform: uppercase;
-    text-shadow: 1px 3px 1px #87801E;
-
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 1px #87801E;
 }
 
 .Luna_poster {
-    height: 400px;
-    width: auto;
+  height: 400px;
+  width: auto;
 }
 
 .grandmas_poster {
-    height: 450px;
-    width: auto;
+  height: 450px;
+  width: auto;
 }
 
 .pelis p {
-    /* background-color: #985B0B; */
-    border-radius: 20px;
-    border: solid 1px #E58910;
-    padding: 20px;
-    margin-top: 10px;
-    color: #724408;
+  /* background-color: #985B0B; */
+  border-radius: 20px;
+  border: solid 1px #E58910;
+  padding: 20px;
+  margin-top: 10px;
+  color: #724408;
 }
-
 
 .poster {
-    height: 450px;
-    width: auto;
-    border: solid white 1px;
+  height: 450px;
+  width: auto;
+  border: solid white 1px;
 }
+
 /* fin mi trabajo */
-
-
 /* inicia media queries */
 /* media queries galeria proyectos */
 @media (max-width: 768px) {
-    .gallery-item {
-        flex: 0 0 calc(50% - 20px);
-        /* Dos columnas por fila */
-    }
+  .gallery-item {
+    flex: 0 0 calc(50% - 20px);
+    /* Dos columnas por fila */
+  }
 }
-
 @media (max-width: 480px) {
-    .gallery-item {
-        flex: 0 0 100%;
-        padding-right: 20px;
-    }
+  .gallery-item {
+    flex: 0 0 100%;
+    padding-right: 20px;
+  }
 }
-
 /* fin media queries galeria proyectos */
 @media only screen and (min-width: 1200px) {
-    h1 {
-        margin-left: 650px;
-
-    }
-
-    h2 {
-        margin-left: 750px;
-    }
-
-    h3 {
-        margin-left: 900px;
-        font-size: 40px;
-    }
+  h1 {
+    margin-left: 650px;
+  }
+  h2 {
+    margin-left: 750px;
+  }
+  h3 {
+    margin-left: 900px;
+    font-size: 40px;
+  }
 }
-
 @media only screen and (max-width: 320px) {
-    h4 {
-        font-size: 40px;
-
-    }
-
-    form {
-        margin-left: 0px;
-        margin-bottom: 60px;
-    }
+  h4 {
+    font-size: 40px;
+  }
+  form {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
 }
-
 /* media queries sobre mi */
 @media only screen and (max-width: 320px) {
-    section p {
-        margin-left: 0px;
-        font-size: 20px;
-        text-align: center;
-    }
+  section p {
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
 }
-
 @media only screen and (max-width: 320px) {
-    .nleft {
-        height: 150px;
-        width: 150px;
-        margin-left: 80px;
-    }
+  .nleft {
+    height: 150px;
+    width: 150px;
+    margin-left: 80px;
+  }
 }
-
 @media only screen and (max-width: 320px) {
-    .nright h4 {
-        font-size: 13px; 
-        word-break: none;
-    }
+  .nright h4 {
+    font-size: 13px;
+    word-break: none;
+  }
 }
-
 @media only screen and (max-width: 320px) {
-    .nright {
-        margin-left: 0px;
-        height: 200px;
-        padding-top: 40px;
-        
-    }
+  .nright {
+    margin-left: 0px;
+    height: 200px;
+    padding-top: 40px;
+  }
 }
-
 @media only screen and (max-width: 480px) {
-    .presentacion p {
-        height: 230px;
-        width: 300px;
-        text-align: justify;
-        align-items: center;
-    }
-    .presentacion span p{
-        margin-bottom: 250px;
-    }
-
-    .porcentajes .foto{
-        height: 50px;
-        width: auto;
-    }
+  .presentacion p {
+    height: 230px;
+    width: 300px;
+    text-align: justify;
+    align-items: center;
+  }
+  .presentacion span p {
+    margin-bottom: 250px;
+  }
+  .porcentajes .foto {
+    height: 50px;
+    width: auto;
+  }
 }
-
-
 /* fin media queries */
+
+/*# sourceMappingURL=estilos.css.map */
